@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - JPSRetail</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/site.css"/>
+</head>
+<body>
+
+<div class="container pt-2">
+    <div class="row">
+        <div class="col-xl-8 col-lg-5">
+            <img class="logo" src="~/images/logo.png" alt="JPS Retail Logo">
+        </div>
+        <div class="col-xl-2 col-lg-3 my-auto">
+            <img src="~/images/header_page/mail.png" alt="mail icon">
+            <a class="email" href="info@jpsretail.nl" style="padding-right: 10px" ;>info@jpsretail.nl</a>
+        </div>
+        <div class="col-xl-2 col-lg-3 my-auto">
+            <img src="~/images/header_page/mail.png" alt="telephone logo">
+            <a>06 51 18 83 22</a>
+        </div>
+    </div>
+</div>
+
+<div class="headerimages">
+    <img src="~/images/header_images/manhattan.jpg" style="height: 300px; width: 100%;" alt="manhattan image">
+</div>
+
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 border-danger">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                @* <partial name="_LoginPartial"/> *@
+                <ul id="menu" class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Welkom</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Aanbod</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Nieuws</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main role="main" class="container-fluid no-gutters">
+    <div class="row">
+        @RenderBody()
+    </div>
+</main>
+
+@* <div class="container"> *@
+@*     <main role="main" class="pb-3"> *@
+@*         @RenderBody() *@
+@*     </main> *@
+@* </div> *@
+
+<footer class="border-top footer text-muted">
+    <div class="container">
+        <div class="row details offset-1">
+            <div class="col-xl-3 col-lg-3 col-md-3">
+                <p>&copy; 2020 - JPSRetail - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></p>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3">
+                <p><Strong>Telefoon</Strong> 06 51 18 83 22</p>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3">
+                <p><Strong>Adres</Strong> Aangelag 24 Nuenen</p>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3">
+                <p><Strong>Email</Strong> info@jpsretail.nl</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@RenderSection("Scripts", required: false)
+</body>
+</html>

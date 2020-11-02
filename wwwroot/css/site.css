@@ -1,0 +1,304 @@
+﻿/* Fonts */
+@font-face {
+    src: url("../fonts/Carme-Regular.ttf");
+    font-family: Carme;
+    font-weight: normal;
+}
+
+@font-face {
+    src: url("../fonts/Adamina-Regular.ttf");
+    font-family: Adamina;
+    font-weight: normal;
+}
+
+@font-face {
+    src: url("../fonts/Lucida Sans.ttf");
+    font-family: Lucida;
+    font-weight: normal;
+}
+
+@font-face {
+  font-family: Oswald-Regular;
+  src: url('../fonts/oswald/Oswald-Regular.ttf');
+}
+
+@font-face {
+  font-family: Oswald-Medium;
+  src: url('../fonts/oswald/Oswald-Medium.ttf');
+}
+
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+
+
+/* Custom css 
+-------------------------------------------------- */
+
+
+/* Navbar 
+-------------------------------------------------- */
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: black !important;
+}
+
+.navbar-nav > li {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.email {
+    color: black !important;
+}
+
+.details .details div p{
+    color: white !important;
+}
+
+
+
+
+
+.top-buffer {
+    margin-top: 20px;
+    white-space: nowrap;
+}
+
+.info {
+    white-space: nowrap;
+    font-family: 'Geneva', sans-serif
+}
+
+h2.welkomHeader {
+    font-family: Carme, serif;
+    font-size: 48px;
+    color: #464243;
+}
+
+.welkomTekstContainer {
+    background: #E2A5CF;
+}
+
+.welkomTekst div p {
+    padding-top: 10px !important;
+    padding-bottom: 2px !important;
+    font-family: Adamina, serif;
+}
+
+span img {
+    height: 20em;
+    /*border-radius: 50%;*/
+    margin-left: 40px;
+    margin-top: 10px;
+    /*border-style: solid;*/
+    /*border-color: #F2F1F2;*/
+    /*width: 400px;*/
+}
+
+.profile-pic-circle {
+    height: 330px;
+    width: 300px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #F2F1F2;
+    background-color: White;
+    display: block;
+}
+
+.logo {
+    width: 9em;
+}
+
+
+
+
+
+.foot {
+    padding-left: 30px !important;
+}
+
+.aanbod {
+    color: #ffffff !important;
+    background-color: #cd63ac !important;
+    margin-bottom: 10px !important;
+    padding: 30px;
+}
+
+b.ball {
+    display: block;
+    width: 800px;
+    height: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #B0067B;
+    border-radius: 50%;
+}
+
+b.ballServices {
+    display: block;
+    width: 250px;
+    height: 5px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    background-color: #B0067B;
+    border-radius: 50%;
+}
+
+.servicesHeader {
+    font-family: Carme, serif;
+    font-size: 48px;
+    color: #464243;
+}
+
+.service2Container {
+    background-color: #F7CCF2;
+}
+
+.service2Container div div div p {
+    font-family: Georgia, sans-serif;
+    font-size: 15px;
+}
+
+.service2Container div div div h5 {
+    font-family: Georgia, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.servicesContainer {
+    margin-top: 20px;
+    background: #F7E7F2;
+}
+
+.serviceElements div div p {
+    font-family: Georgia, serif;
+    font-size: 20px;
+}
+
+.serviceElements div div h1 {
+    font-family: Adamina, serif;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.nieuwsHeader {
+    font-family: Carme, serif;
+    font-size: 48px;
+    color: #464243;
+}
+
+.ballNieuws {
+    display: block;
+    width: 470px;
+    height: 5px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    background-color: #B0067B;
+    border-radius: 50%;
+}
+
+.nieuwsFluid{
+    background-color: #CE64AD;
+}
+
+.nieuwsFluid div div div h3 {
+    font-family: Adamina, sans-serif;
+    font-size: 24px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.nieuwsFluid div div div img {
+    height: 300px;
+    width: 100%;
+}
+
+img.contact-img {
+    width: 100%;
+    height: 400px;
+    opacity: 40%;
+}
+
+.contact-im-div {
+    position: relative;
+}
+
+p.centered {
+    position: absolute;
+    top: 35%;
+    font-family: Adamina, serif;
+    width: 500px;
+    text-shadow: 1px 1px #B0067B;
+}
+
